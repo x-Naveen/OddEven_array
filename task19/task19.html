@@ -1,0 +1,39 @@
+<html>
+<head>
+<body style="background:darkblue;color:white">
+<h1>Getting odd and even numbers from an array</h1>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<button type="button" onclick="myFunction()">click</button>
+</body>
+
+<script>
+
+var x = [1,2,3,4,5,6,7,8,9,10,55,44,33,22,11];
+
+document.getElementById("demo").innerHTML = x;
+
+function myFunction(){
+var odd = [];
+var even = [];
+var z = x.length;
+ 
+ for(var i =0; i< z; i++){
+ if((x[i]%2) == 0){
+ odd.push(x[i]);
+ 
+ }
+ else{
+ even.push(x[i]);
+ }
+ 
+ }
+ document.getElementById("demo1").innerHTML = odd;
+ document.getElementById("demo2").innerHTML = even;
+ 
+}
+
+</script>
+</head>
+</html>
